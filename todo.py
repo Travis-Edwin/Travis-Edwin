@@ -4,8 +4,8 @@ import os
 TASKS_FILE = "tasks.json"
 
 def load_tasks():
-  if os.path.exists(TAKS_FILE):
-    with open(TAKS_FILE, "r") as file:
+  if os.path.exists(TASKS_FILE):
+    with open(TASKS_FILE, "r") as file:
       return json.load(file)
   return[]
   
@@ -17,11 +17,11 @@ def show_tasks(tasks):
   if not tasks:
     print("No tasks found.")
     return
-  for i, tasks in enumerate(tasks, start=1):
+  for i, task in enumerate(tasks, start=1):
     print(f"{i}. {tasks}")
 
 def add_task(tasks):
-  tasks = input("Enter a task: ")
+  task = input("Enter a task: ")
   tasks.append(task)
   save_tasks(tasks)
   print("Task added.")
@@ -52,9 +52,9 @@ def main():
     if choice == "1":
       show_tasks(tasks)
     elif choice == "2":
-      add_tasks(tasks)
+      add_task(tasks)
     elif choice == "3":
-      Delete_tasks(tasks)
+      delete_task(tasks)
     elif choice == "4":
       print("Goodbye!")
       break
