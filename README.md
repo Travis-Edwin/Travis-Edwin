@@ -1,10 +1,10 @@
 # Hi, I'm Travis! 👋
-I'm a beginner frontend developer learning the ropes of web development.
+I'm a frontend developer learning the ropes of web development.
 
 ## Skills I'm Learning
 - HTML, CSS, JavaScript, python
 - React.js, Git & GitHub
-- 
+  
 ## Connect with Me
 - [GitHub](https://github.com/Travis-Edwin/Travis-Edwin/edit/main/README.md)
 - 💞️ I’m looking to collaborate on learning and growth, open-source projects, and teamwork and code contributions...
