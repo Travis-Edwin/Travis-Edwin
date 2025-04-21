@@ -1,4 +1,4 @@
-# Hi, I'm Travis! 👋
+# Hi, I'm Edwin! 👋
 I'm a frontend developer learning the ropes of web development.
 
 ## Skills I'm Learning
