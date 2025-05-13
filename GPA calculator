@@ -1,0 +1,28 @@
+def get_grades():
+    grades = []
+    while True:
+        grade = input("Enter a letter grade (A-F), or type 'done' to finish: ").upper()
+        if grade == 'DONE':
+            break
+        if grade in ['A', 'B', 'C', 'D', 'F']:
+            grades.append(grade)
+        else:
+            print("Invalid grade. Try again.")
+    return grades
+
+def calculate_gpa(grades):
+    grade_points = {
+        'A': 4.0,
+        'B': 3.0,
+        'C': 2.0,
+        'D': 1.0,
+        'F': 0.0
+    }
+    
+    total = sum([points[grade] for grade in grades])
+    return total / len(grades) if grades else 0
+
+grades = get_grades()
+gpa = calculate_gpa(grades)
+print(f"Your GPA is: {gpa:.2f}")
+  
